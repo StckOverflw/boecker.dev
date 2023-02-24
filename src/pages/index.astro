@@ -1,0 +1,64 @@
+---
+import SocialLink from "../components/SocialLink.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Home">
+  <div class="flex h-[99svh] w-full justify-center items-center">
+    <div class="flex flex-col gap-4 w-[90%] xl:w-[50%]">
+      <div class="flex flex-col gap-2">
+        <p
+          class="text-3xl text-violet-500 animate-fadeInTop opacity-0"
+          style="animation-fill-mode: forwards;"
+        >
+          Hey there 👋, I'm
+        </p>
+        <h2
+          class="text-7xl font-semibold text-blue-300 animate-fadeInTop opacity-0"
+          style="animation-delay: 100ms; animation-fill-mode: forwards;"
+        >
+          Emma <span class="hidden sm:inline-block">Böcker</span>
+        </h2>
+      </div>
+      <p
+        class="text-2xl text-violet-300 animate-fadeInTop opacity-0"
+        style="animation-delay: 200ms; animation-fill-mode: forwards;"
+      >
+        Full-Stack Developer & Student from Germany.
+        <a
+          class="text-violet-400"
+          href="/about"
+          title="Read more about me"
+          data-swup-preload>Read more...</a
+        >
+      </p>
+      <div
+        class="flex flex-row gap-2 justify-start w-full text-neutral-400 animate-fadeInTop opacity-0"
+        style="animation-delay: 300ms; animation-fill-mode: forwards;"
+      >
+        <SocialLink
+          icon="mdi:github"
+          link="https://github.com/StckOverflw"
+          title="GitHub"
+        />
+        <SocialLink
+          icon="mdi:mastodon"
+          link="https://chaos.social/@stck"
+          title="Mastodon"
+        />
+        <SocialLink
+          icon="mdi:twitter"
+          link="https://twitter.com/StckOverflw"
+          title="Twitter"
+        />
+        <SocialLink
+          icon="bi:discord"
+          link="discord://-/users/816989010836717599"
+          title="Discord"
+        />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style></style>

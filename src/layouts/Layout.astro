@@ -1,0 +1,96 @@
+---
+import { Sprite } from "astro-icon";
+import "@fontsource/rubik";
+import Navigation from "../components/Navigation.astro";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<script>
+  // @ts-nocheck // this is a javascript library, no types for the plugins provided at all
+  import Swup from "swup";
+  import SwupScriptsPlugin from "@swup/scripts-plugin";
+  import SwupA11yPlugin from "@swup/a11y-plugin";
+  import SwupHeadPlugin from "@swup/head-plugin";
+  import SwupFadeTheme from "@swup/slide-theme";
+  import SwupScrollPlugin from "@swup/scroll-plugin";
+  import SwupPreloadPlugin from "@swup/preload-plugin";
+  import SwupDebugPlugin from "@swup/debug-plugin";
+  const swup = new Swup({
+    plugins: [
+      new SwupScriptsPlugin(),
+      new SwupA11yPlugin(),
+      new SwupHeadPlugin(),
+      new SwupFadeTheme(),
+      new SwupScrollPlugin({
+        animateScroll: !window.matchMedia("(prefers-reduced-motion: reduce)")
+          .matches,
+      }),
+      new SwupPreloadPlugin(),
+      new SwupDebugPlugin(),
+    ],
+  });
+</script>
+
+<html class="dark scroll-smooth bg-background" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/pfp_rounded.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | Emma Böcker</title>
+  </head>
+  <body>
+    <div id="content">
+      <Sprite.Provider>
+        <Navigation />
+      </Sprite.Provider>
+      <main id="swup">
+        <Sprite.Provider>
+          <slot />
+        </Sprite.Provider>
+      </main>
+    </div>
+  </body>
+</html>
+<style is:global>
+  :root {
+    --accent: 124, 58, 237;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      #da62c4 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: none;
+    background: #0b090c;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    position: fixed;
+    background: #24203a;
+    border-radius: 1rem;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+</style>
