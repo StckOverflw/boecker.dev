@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageContent from "../layouts/PageContent.astro";
+
+import projects from "../data/projects.json";
+import { Sprite } from "astro-icon";
+---
+
+<Layout title="Projects & Work">
+  <PageContent
+    title="Projects & Work"
+    description="Skills I have & some of the projects I've done in the past"
+  >
+    <div class="mb-12 text-lg" id="text">
+      <p
+        class="opacity-0 animate-fadeInTop"
+        style="animation-fill-mode: forwards; animation-delay: 100ms;"
+      >
+        My provicency in Full-Stack Development with Languages like Typescript,
+        Rust and Kotlin allow me to build anything from a simple website to a
+        complex web application.
+      </p>
+      <p
+        class="opacity-0 animate-fadeInTop"
+        style="animation-fill-mode: forwards; animation-delay: 200ms;"
+      >
+        Here you can find some of my current projects
+      </p>
+    </div>
+    <div
+      class="grid grid-rows-3 md:grid-rows-2 xl:grid-rows-1 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 md:gap-8 xl:gap-6"
+    >
+      {
+        projects.map((project, index) => (
+          <article
+            class="relative bg-neutral-800 rounded-xl flex flex-col opacity-0 animate-fadeInTop"
+            style={`animation-fill-mode: forwards; animation-delay: ${
+              (index + 3) * 100
+            }ms`}
+          >
+            <img
+              src={project.image}
+              class="rounded-t-xl"
+              width="1920"
+              height="1080"
+            />
+            <div class="flex flex-col p-3 h-full ">
+              <div class="flex-grow">
+                <div class="flex flex-row gap-2 text-neutral-400 uppercase text-sm">
+                  {project.tags.map((tag) => (
+                    <p>#{tag}</p>
+                  ))}
+                </div>
+                <p class="text-lg">{project.name}</p>
+                <p class="text-neutral-300">{project.description}</p>
+              </div>
+              <div class="flex flex-row gap-4 mt-1 bottom-0">
+                {project.links?.map((link) => (
+                  <a
+                    class="flex flex-row items-center gap-1 text-violet-300"
+                    target="_blank"
+                    href={link.url}
+                  >
+                    <Sprite name="ci:external-link" size="20" />
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <div
+      class="mt-12 text-xl animate-fadeInTop opacity-0"
+      style="animation-fill-mode: forwards; animation-delay: 600ms;"
+    >
+      If you want to see more feel free to check out my <a
+        class="text-violet-300"
+        href="https://github.com/StckOverflw"
+        target="_blank">Github</a
+      >
+    </div>
+  </PageContent>
+</Layout>

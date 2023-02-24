@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Railboard",
+        "description": "A web-app to view information about Trains in Germany",
+        "image": "https://cdn.discordapp.com/attachments/945350973767950458/1079365617527836762/brave_K7BlDtxjmU.png",
+        "tags": [
+            "web",
+            "trains",
+            "nextjs"
+        ],
+        "links": [
+            {
+                "name": "Try it",
+                "url": "https://rail.stckoverflw.net"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/StckOverflw/railboard"
+            }
+        ]
+    },
+    {
+        "name": "Railboard API",
+        "description": "Backend for Railboard and soon-to-be stable public api to get high quality german train data",
+        "image": "https://cdn.discordapp.com/attachments/945350973767950458/1079389718267043920/brave_GvaSw3L7o7.png",
+        "tags": [
+            "backend",
+            "trains",
+            "rust"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/StckOverflw/railboard-api"
+            },
+            {
+                "name": "Documentation",
+                "url": "https://api.rail.stckoverflw.net/docs"
+            }
+        ]
+    },
+    {
+        "name": "This Website",
+        "description": "This website, built with Astro",
+        "image": "https://cdn.discordapp.com/attachments/945350973767950458/1079386048737587361/image.png",
+        "tags": [
+            "web",
+            "astro",
+            "design"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/StckOverflw/stckoverflw.net"
+            }
+        ]
+    }
+]

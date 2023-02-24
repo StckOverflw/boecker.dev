@@ -1,0 +1,21 @@
+---
+import { Sprite } from "astro-icon";
+
+export type Props = {
+  icon: string;
+  link: string;
+  title: string;
+};
+
+const { icon, link, title } = Astro.props;
+---
+
+<a
+  class="hover:text-indigo-300 transition-colors duration-200"
+  href={link}
+  target="_blank"
+  title={title}
+  rel="me"
+>
+  <Sprite name={icon} size={32} />
+</a>

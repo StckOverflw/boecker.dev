@@ -1,0 +1,102 @@
+---
+import { Sprite } from "astro-icon";
+// From https://github.com/Cubxity/cubxity.dev/blob/c3964a83e3c4bdbb692f29b890672c04bef1909d/components/layout/Navigation.tsx
+// "translated" to astro and modified for my own links
+---
+
+<script>
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 64) {
+      document
+        .querySelector("nav")
+        ?.classList.add("bg-background", "shadow-2xl");
+    } else {
+      document
+        .querySelector("nav")
+        ?.classList.remove("bg-background", "shadow-2xl");
+    }
+  });
+</script>
+
+<nav
+  class:list={"fixed top-0 right-0 left-0 px-4 py-6 transition-all duration z-50"}
+>
+  <noscript>
+    <div
+      class="absolute top-0 bottom-0 left-0 right-0 -z-10 bg-background shadow-2xl"
+    >
+    </div>
+  </noscript>
+  <div
+    class="container flex items-center justify-between mx-auto bg-background shadow-2xl"
+  >
+    <div class="flex items-center gap-4">
+      <a href="/">
+        <img
+          src="https://github.com/StckOverflw.png"
+          alt="Profile Picture"
+          class="rounded-full animate-fadeInTop opacity-0"
+          style="animation-fill-mode: forwards;"
+          width="40"
+          height="40"
+        />
+      </a>
+      <a
+        href="/about"
+        class="underline animate-fadeInTop opacity-0"
+        style="animation-fill-mode: forwards; animation-delay: 100ms;">About</a
+      >
+      <a
+        href="/blog"
+        class="underline animate-fadeInTop opacity-0"
+        style="animation-fill-mode: forwards; animation-delay: 200ms;">Blog</a
+      >
+      <a
+        href="/work"
+        class="underline animate-fadeInTop opacity-0"
+        style="animation-fill-mode: forwards; animation-delay: 300ms;"
+        >Work</a
+      >
+    </div>
+    <div class="items-center md:flex flex-row gap-4">
+      <a
+        href="/contact"
+        class="flex flex-row gap-2 items-center rounded-3xl bg-violet-600 hover:bg-violet-500 transition-colors duration-200 py-2 px-4 animate-fadeInTop opacity-0"
+        style="animation-fill-mode: forwards; animation-delay: 400ms;"
+      >
+        <Sprite name="cil:envelope-letter" size="22" class="my-auto" />
+        <span class="hidden sm:block my-auto">Contact Me</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  nav {
+    overflow: auto;
+    scrollbar-gutter: stable both-edges;
+  }
+  .underline {
+    text-decoration: none;
+    position: relative;
+  }
+  .underline:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .underline:hover:after {
+    width: 80%;
+    @apply bg-violet-500;
+  }
+</style>
