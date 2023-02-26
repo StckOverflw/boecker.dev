@@ -1,10 +1,35 @@
---- 
+---
+import { Sprite } from "astro-icon";
 import Layout from "../layouts/Layout.astro";
 import PageContent from "../layouts/PageContent.astro";
-
 ---
-<Layout title="Contact Me">
-    <PageContent title="Contact Me" description="Have something in Mind? Let's chat!">
 
-    </PageContent>
+<Layout title="Contact Me">
+  <PageContent
+    title="Contact Me"
+    description="Have something in Mind? Let's chat!"
+  >
+    <div class="flex flex-col gap-5">
+      <div class="flex flex-row gap-5">
+        <a
+          class="flex flex-row gap-1 items-center justify-center text-xl h-full animate-fadeInTop opacity-0 hover:text-violet-400 transition-colors duration-200"
+          style="animation-fill-mode: forwards; animation-delay: 200ms;"
+          href="mailto:stckoverflw@gmail.com"
+          target="_blank"
+        >
+          <Sprite name="ic:sharp-alternate-email" size="20" />
+          <span class="my-auto">Send me an Email</span>
+        </a>
+        <a
+          class="flex flex-row gap-1 items-center justify-center text-xl h-full animate-fadeInTop opacity-0 hover:text-violet-400 transition-colors duration-200"
+          style="animation-fill-mode: forwards; animation-delay: 300ms;"
+          href="https://twitter.com/StckOverflw"
+          target="_blank"
+        >
+          <Sprite name="mdi:twitter" size="20" />
+          <span class="my-auto">Message me on Twitter</span>
+        </a>
+      </div>
+    </div>
+  </PageContent>
 </Layout>
