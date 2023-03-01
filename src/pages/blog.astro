@@ -2,9 +2,37 @@
 import Layout from "../layouts/Layout.astro";
 import PageContent from "../layouts/PageContent.astro";
 
+const posts = await Astro.glob("../pages/blog/*{.mdx,.md}");
 ---
-<Layout title="Blog">
-    <PageContent title="Blog" description="Coming soon">
 
-    </PageContent>
+<Layout
+  title="Blog"
+  description="This is my own Blog where I talk about stuff that interests me! Check it out!"
+>
+  <PageContent
+    title="Blog"
+    description="My own Blog where I talk about stuff that interests me"
+  >
+    <div class="flex flex-col gap-5">
+      {
+        posts.map((post, index) => (
+          <a
+            href={post.url}
+            class="animate-fadeInTop opacity-0"
+            style={`animation-fill-mode: forwards; animation-delay: ${
+              (index + 2) * 50
+            }ms;`}
+          >
+            <div class="bg-neutral-900 hover:bg-neutral-800/80 hover:scale-[1.02] transition-all duration-200 rounded-md p-3 w-full">
+              <p class="text-xl">{post.frontmatter.title}</p>
+              <p class="text-neutral-400">{post.frontmatter.lang}</p>
+              <p class="text-lg text-neutral-300 break-words">
+                {post.frontmatter.description}
+              </p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </PageContent>
 </Layout>
