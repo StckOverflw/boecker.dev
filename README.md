@@ -1,3 +1,9 @@
-# My Website
-if you're reading this, why are you looking at initial commit \
-![Erm](https://cdn.7tv.app/emote/62699d140528a4110cd1da4f/4x.webp)
+# My [Website](https://stckoverflw.net)
+
+Built with [Astro](https://astro.build), [TailwindCSS](https://tailwindcss.com) and [Swup.js](https://swup.js.org)
+
+![Screenshot](https://cdn.discordapp.com/attachments/945350973767950458/1079386048737587361/image.png)
+
+### License
+
+This project is licensed under the [AGPL-3.0 License](https://github.com/StckOverflw/stckoverflw.net/blob/main/LICENSE.txt)
