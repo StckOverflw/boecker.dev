@@ -19,23 +19,28 @@ const { title, description, locale, type } = Astro.props;
   import SwupScriptsPlugin from "@swup/scripts-plugin";
   import SwupA11yPlugin from "@swup/a11y-plugin";
   import SwupHeadPlugin from "@swup/head-plugin";
-  import SwupFadeTheme from "@swup/slide-theme";
+  import SwupSlideTheme from "@swup/slide-theme";
+  import SwupFadeTheme from "@swup/fade-theme";
   import SwupScrollPlugin from "@swup/scroll-plugin";
   import SwupPreloadPlugin from "@swup/preload-plugin";
   import SwupDebugPlugin from "@swup/debug-plugin";
-  const swup = new Swup({
-    plugins: [
-      new SwupScriptsPlugin(),
-      new SwupA11yPlugin(),
-      new SwupHeadPlugin(),
-      new SwupFadeTheme(),
-      new SwupScrollPlugin({
-        animateScroll: !window.matchMedia("(prefers-reduced-motion: reduce)")
-          .matches,
-      }),
-      new SwupPreloadPlugin(),
-      new SwupDebugPlugin(),
-    ],
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const match = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const swup = new Swup({
+      plugins: [
+        new SwupScriptsPlugin(),
+        new SwupA11yPlugin(),
+        new SwupHeadPlugin(),
+        match.matches ? new SwupFadeTheme() : new SwupSlideTheme(),
+        new SwupScrollPlugin({
+          animateScroll: !match.matches,
+        }),
+        new SwupPreloadPlugin(),
+        new SwupDebugPlugin(),
+      ],
+    });
   });
 </script>
 

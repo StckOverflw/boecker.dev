@@ -16,7 +16,7 @@ import { Sprite } from "astro-icon";
   >
     <div class="mb-12 text-lg" id="text">
       <p
-        class="opacity-0 animate-fadeInTop"
+        class="motion-safe:opacity-0 motion-safe:animate-fadeInTop"
         style="animation-fill-mode: forwards; animation-delay: 100ms;"
       >
         My proficiency in Full-Stack Development with Languages like Typescript,
@@ -24,7 +24,7 @@ import { Sprite } from "astro-icon";
         complex web application.
       </p>
       <p
-        class="opacity-0 animate-fadeInTop"
+        class="motion-safe:opacity-0 motion-safe:animate-fadeInTop"
         style="animation-fill-mode: forwards; animation-delay: 200ms;"
       >
         Here you can find some of my current projects
@@ -35,9 +35,9 @@ import { Sprite } from "astro-icon";
     >
       {
         projects.map((project, index) => (
-          <article class="scale-100 hover:scale-105 transition-all duration-200 h-full">
+          <article class="motion-safe:hover:scale-105 transition-all duration-200 h-full">
             <div
-              class="relative bg-neutral-800 rounded-xl flex flex-col opacity-0 animate-fadeInTop h-full"
+              class="relative bg-neutral-800 rounded-xl flex flex-col motion-safe:opacity-0 motion-safe:animate-fadeInTop h-full"
               style={`animation-fill-mode: forwards; animation-delay: ${
                 (index + 3) * 100
               }ms`}
@@ -77,7 +77,7 @@ import { Sprite } from "astro-icon";
       }
     </div>
     <div
-      class="mt-12 text-xl animate-fadeInTop opacity-0"
+      class="mt-12 text-xl motion-safe:animate-fadeInTop motion-safe:opacity-0"
       style="animation-fill-mode: forwards; animation-delay: 600ms;"
     >
       If you want to see more feel free to check out my <a

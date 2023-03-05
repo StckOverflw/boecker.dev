@@ -18,12 +18,12 @@ const posts = await Astro.glob("../pages/blog/*{.mdx,.md}");
         posts.map((post, index) => (
           <a
             href={post.url}
-            class="animate-fadeInTop opacity-0"
+            class="motion-safe:animate-fadeInTop motion-safe:opacity-0"
             style={`animation-fill-mode: forwards; animation-delay: ${
               (index + 2) * 50
             }ms;`}
           >
-            <div class="bg-zinc-900 hover:bg-zinc-800/80 hover:scale-[1.02] transition-all duration-200 rounded-md p-3 w-full">
+            <div class="bg-zinc-900 hover:bg-zinc-800/80 motion-safe:hover:scale-[1.02] transition-all duration-200 rounded-md p-3 w-full">
               <p class="text-xl">{post.frontmatter.title}</p>
               <p class="text-zinc-400">{post.frontmatter.date} - {post.frontmatter.tags.join(", ")}</p>
               <p class="text-lg text-zinc-300 break-words">
