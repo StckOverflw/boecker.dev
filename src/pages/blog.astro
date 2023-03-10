@@ -1,4 +1,5 @@
 ---
+import { Sprite } from "astro-icon";
 import Layout from "../layouts/Layout.astro";
 import PageContent from "../layouts/PageContent.astro";
 
@@ -13,26 +14,42 @@ const posts = await Astro.glob("../pages/blog/*{.mdx,.md}");
     title="Blog"
     description="My own Blog where I talk about stuff that interests me"
   >
-    <div class="flex flex-col gap-5">
-      {
-        posts.map((post, index) => (
-          <a
-            href={post.url}
-            class="motion-safe:animate-fadeInTop motion-safe:opacity-0"
-            style={`animation-fill-mode: forwards; animation-delay: ${
-              (index + 2) * 50
-            }ms;`}
-          >
-            <div class="bg-zinc-900 hover:bg-zinc-800/80 motion-safe:hover:scale-[1.02] transition-all duration-200 rounded-md p-3 w-full">
-              <p class="text-xl">{post.frontmatter.title}</p>
-              <p class="text-zinc-400">{post.frontmatter.date} - {post.frontmatter.tags.join(", ")}</p>
-              <p class="text-lg text-zinc-300 break-words">
-                {post.frontmatter.description}
-              </p>
-            </div>
-          </a>
-        ))
-      }
+    <div slot="right-title" class="flex flex-row gap-5 items-center">
+      <span class="text-4xl">-</span>
+      <a
+        class="text-4xl text-violet-300 hover:text-violet-400 motion-safe:animate-fadeInTop motion-safe:opacity-0 transition-colors duration-200 flex flex-row gap-2"
+        style={`animation-fill-mode: forwards; animation-delay: 200ms`}
+        href="/rss.xml"
+        target="_blank"
+      >
+        Follow Blog <Sprite name="ic:round-rss-feed" size="42" />
+      </a>
+    </div>
+    <div class="flex flex-col gap-10">
+      <div class="flex flex-col gap-5">
+        {
+          posts.map((post, index) => (
+            <a
+              href={post.url}
+              class="motion-safe:animate-fadeInTop motion-safe:opacity-0"
+              style={`animation-fill-mode: forwards; animation-delay: ${
+                (index + 3) * 50
+              }ms;`}
+            >
+              <div class="bg-zinc-900 hover:bg-zinc-800/80 motion-safe:hover:scale-[1.02] transition-all duration-200 rounded-md p-3 w-full">
+                <p class="text-xl">{post.frontmatter.title}</p>
+                <p class="text-zinc-400">
+                  {post.frontmatter.pubDate} -{" "}
+                  {post.frontmatter.tags.join(", ")}
+                </p>
+                <p class="text-lg text-zinc-300 break-words">
+                  {post.frontmatter.description}
+                </p>
+              </div>
+            </a>
+          ))
+        }
+      </div>
     </div>
   </PageContent>
 </Layout>

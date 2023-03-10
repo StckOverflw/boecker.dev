@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPostLayout.astro"
 title: "New Website!"
 description: "Welcome to my brand new website built with Astro and TailwindCSS!"
 locale: "en_US"
-date: "2023-02-03"
+pubDate: "2023-02-03"
 tags: ["English", "Dev", "Personal"]
 ---
 

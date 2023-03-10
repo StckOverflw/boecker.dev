@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^0.17.2",
+		"@astrojs/rss": "^2.2.0",
 		"@astrojs/tailwind": "^3.0.1",
 		"@fontsource/rubik": "^4.5.14",
 		"@swup/a11y-plugin": "^2.1.0",
@@ -21,12 +22,14 @@
 		"@swup/scripts-plugin": "^1.1.0",
 		"@swup/scroll-plugin": "^2.0.1",
 		"@swup/slide-theme": "^1.0.5",
-		"astro": "^2.0.15",
+		"astro": "^2.1.2",
 		"astro-icon": "^0.8.0",
+		"sanitize-html": "^2.10.0",
 		"swup": "^3.0.4",
 		"tailwindcss": "^3.0.24"
 	},
 	"devDependencies": {
-		"@tailwindcss/typography": "^0.5.9"
+		"@tailwindcss/typography": "^0.5.9",
+		"@types/sanitize-html": "^2.8.1"
 	}
 }
