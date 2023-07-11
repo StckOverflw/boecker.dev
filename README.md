@@ -1,4 +1,4 @@
-# My [Website](https://stckoverflw.net)
+# My [Website](https://boecker.dev)
 
 Built with [Astro](https://astro.build), [TailwindCSS](https://tailwindcss.com) and [Swup.js](https://swup.js.org)
 

@@ -20,7 +20,9 @@ import PageContent from "../layouts/PageContent.astro";
         I'm always happy to chat and I love great ideas, so if you think you
         have one or if you just wanna talk please don't hesitate contacting me!
       </p>
-      <div class="flex flex-col justify-start sm:flex-row gap-5">
+      <div
+        class="grid justify-start grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3"
+      >
         <a
           class="flex flex-row gap-1 items-center text-xl h-full motion-safe:animate-fadeInTop motion-safe:opacity-0 hover:text-violet-400 transition-colors duration-200"
           style="animation-fill-mode: forwards; animation-delay: 300ms;"
@@ -33,11 +35,29 @@ import PageContent from "../layouts/PageContent.astro";
         <a
           class="flex flex-row gap-1 items-center text-xl h-full motion-safe:animate-fadeInTop motion-safe:opacity-0 hover:text-violet-400 transition-colors duration-200"
           style="animation-fill-mode: forwards; animation-delay: 400ms;"
+          href="https://matrix.to/#/@emma:boecker.dev"
+          target="_blank"
+        >
+          <Sprite name="simple-icons:matrix" size="20" />
+          <span class="my-auto">Contact me on Matrix</span>
+        </a>
+        <a
+          class="flex flex-row gap-1 items-center text-xl h-full motion-safe:animate-fadeInTop motion-safe:opacity-0 hover:text-violet-400 transition-colors duration-200"
+          style="animation-fill-mode: forwards; animation-delay: 500ms;"
           href="https://twitter.com/StckOverflw"
           target="_blank"
         >
           <Sprite name="mdi:twitter" size="20" />
           <span class="my-auto">Message me on Twitter</span>
+        </a>
+        <a
+          class="flex flex-row gap-1 items-center text-xl h-full motion-safe:animate-fadeInTop motion-safe:opacity-0 hover:text-violet-400 transition-colors duration-200"
+          style="animation-fill-mode: forwards; animation-delay: 600ms;"
+          href="https://discord.gg/WWwNTDdXx2"
+          target="_blank"
+        >
+          <Sprite name="ic:outline-discord" size="20" />
+          <span class="my-auto">Join my Discord</span>
         </a>
       </div>
     </div>

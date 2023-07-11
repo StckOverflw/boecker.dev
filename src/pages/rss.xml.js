@@ -11,7 +11,7 @@ export async function get(context) {
     title: "Emma's Blog",
     description:
       "A blog about different topics that interest me like politics and technology.",
-    site: context.site ?? "https://stckoverflw.net",
+    site: context.site ?? "https://boecker.dev",
     items: posts.map((post) => ({
       link: post.url,
       content: sanitizeHtml(post.compiledContent()),
