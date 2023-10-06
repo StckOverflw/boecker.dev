@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import PageContent from "../layouts/PageContent.astro";
 
 const posts = await Astro.glob("../pages/blog/*{.mdx,.md}");
+posts.reverse();
 ---
 
 <Layout
