@@ -24,8 +24,8 @@ Mit Blick auf die zahlreichen anstehenden Wahlen (Europawahl, Landtagswahlen in 
 
 Ich bringe tiefgreifendes Wissen in vor allem netz- und queerpolitischen Themen mit. Zusätzlich habe ich ein gutes Verständnis vom Jugendverband, seinen Strukturen, seiner Satzung und seiner Abläufe.
 
-Für Nachfragen erreicht ihr mich über Matrix ([@emma:boecker.dev](https://matrix.to/#/@emma:boecker.dev)), Telegram ([@emmabtw](https://t.me/emmabtw)), Threema (84CBWKMP) oder Twitter ([@StckOverflw](https://twitter.com/StckOverflw))
+Für Nachfragen erreicht ihr mich über Matrix ([@emma:boecker.dev](https://matrix.to/#/@emma:boecker.dev)), Telegram ([@emmabtw](https://t.me/emmabtw)), Threema (84CBWKMP) oder Twitter ([@EmmaBoecker](https://twitter.com/EmmaBoecker))
 
 Mit eurer Unterstützung sorgen wir für einen Richtungswechsel und Aufbau des Verbandes! Wir sehen uns in Frankfurt.
 
-_Ihr findet diese Bewerbung ebenfalls auf [Twitter](https://twitter.com/StckOverflw/status/1710216877723562147) und auf [Instagram](https://www.instagram.com/p/CyDRNuQtubr)_
+_Ihr findet diese Bewerbung ebenfalls auf [Twitter](https://twitter.com/EmmaBoecker/status/1710216877723562147) und auf [Instagram](https://www.instagram.com/p/CyDRNuQtubr)_

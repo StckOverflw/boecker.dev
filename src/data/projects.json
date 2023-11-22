@@ -11,11 +11,11 @@
         "links": [
             {
                 "name": "Try it",
-                "url": "https://rail.stckoverflw.net"
+                "url": "https://rail.boecker.net"
             },
             {
                 "name": "GitHub",
-                "url": "https://github.com/StckOverflw/railboard"
+                "url": "https://github.com/emmaboecker/railboard"
             }
         ]
     },
@@ -31,11 +31,11 @@
         "links": [
             {
                 "name": "GitHub",
-                "url": "https://github.com/StckOverflw/railboard-api"
+                "url": "https://github.com/emmaboecker/railboard-api"
             },
             {
                 "name": "Documentation",
-                "url": "https://api.rail.stckoverflw.net/docs"
+                "url": "https://api.rail.boecker.dev/docs"
             }
         ]
     },
@@ -51,7 +51,7 @@
         "links": [
             {
                 "name": "GitHub",
-                "url": "https://github.com/StckOverflw/stckoverflw.net"
+                "url": "https://github.com/emmaboecker/boecker.dev"
             }
         ]
     }

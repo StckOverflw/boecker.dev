@@ -6,4 +6,4 @@ Built with [Astro](https://astro.build), [TailwindCSS](https://tailwindcss.com) 
 
 ### License
 
-This project is licensed under the [AGPL-3.0 License](https://github.com/StckOverflw/stckoverflw.net/blob/main/LICENSE.txt)
+This project is licensed under the [AGPL-3.0 License](https://github.com/emmaboecker/boecker.dev/blob/main/LICENSE.txt)

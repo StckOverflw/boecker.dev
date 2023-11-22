@@ -28,7 +28,7 @@ Since Astro itself doesn't do any Client Side Rendering, but I really wanted to 
 Looking around, I found [Swup.js](https://swup.js.org), which was a perfect fit for what I wanted. <br />
 
 So there we have it – a new website with a new design, new code and new technologies. <br />
-It is also Open Source and you can find the code on [GitHub](https://github.com/StckOverflw/stckoverflw.net). <br />
+It is also Open Source and you can find the code on [GitHub](https://github.com/emmaboecker/boecker.dev). <br />
 
 ## What's next?
 
@@ -37,4 +37,4 @@ I'm planning on writing a bit about my projects & tech in general, my thoughts a
 
 ## Conclusion
 
-I don't really know what else to say here other than that I hope you like the new website. If you have any feedback, feel free to contact me on [Twitter](https://twitter.com/StckOverflw) or join my [Discord](https://discord.gg/WWwNTDdXx2)!
+I don't really know what else to say here other than that I hope you like the new website. If you have any feedback, feel free to contact me on [Twitter](https://twitter.com/EmmaBoecker) or join my [Discord](https://discord.gg/WWwNTDdXx2)!
