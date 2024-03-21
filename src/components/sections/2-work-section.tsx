@@ -4,7 +4,7 @@ export default function WorkSection() {
   return (
     <div
       id="work"
-      className="relative flex mt-[100vh] w-screen bg-black"
+      className="relative flex mt-[100vh] w-full bg-black"
       style={{
         maskImage:
           "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) 50px, rgba(0,0,0,1) 150px)",
