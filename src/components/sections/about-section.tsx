@@ -2,7 +2,7 @@ export default function AboutSection() {
   return (
     <div id="work" className="relative flex w-full">
       <div className="container mx-auto flex flex-col gap-3">
-        <h3 className="text-5xl font-semibold">About me</h3>
+        <h2 className="text-5xl font-semibold">About me</h2>
         <p>
           My name is Emma, I&apos;m a full-stack developer, political activist
           and student from germany.

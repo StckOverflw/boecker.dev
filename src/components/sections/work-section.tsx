@@ -4,7 +4,7 @@ export default function WorkSection() {
   return (
     <div id="work" className="relative flex w-full">
       <div className="container mx-auto px-5 sm:px-0">
-        <h3 className="text-5xl font-semibold">Work</h3>
+        <h2 className="text-5xl font-semibold">Work</h2>
         <p className="font-light">
           Some projects I&apos;ve worked on in the past.
         </p>

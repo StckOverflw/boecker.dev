@@ -15,16 +15,32 @@ export default function HomeSection() {
           </h1>
         </div>
         <div className="flex flex-row text-4xl gap-2 items-center">
-          <a href="https://github.com/emmaboecker" target="_blank">
+          <a
+            href="https://github.com/emmaboecker"
+            target="_blank"
+            aria-label="github page"
+          >
             <FaGithub className="hover:text-primary transition-colors duration-150" />
           </a>
-          <a href="https://twitter.com/EmmaBoecker" target="_blank">
+          <a
+            href="https://twitter.com/EmmaBoecker"
+            target="_blank"
+            aria-label="twitter profile"
+          >
             <FaTwitter className="hover:text-primary transition-colors duration-150" />
           </a>
-          <a href="https://chaos.social/boecker" target="_blank">
+          <a
+            href="https://chaos.social/boecker"
+            target="_blank"
+            aria-label="mastodon profile"
+          >
             <FaMastodon className="hover:text-primary transition-colors duration-150" />
           </a>
-          <a href="https://instagram.com/emma.boecker" target="_blank">
+          <a
+            href="https://instagram.com/emma.boecker"
+            target="_blank"
+            aria-label="instagram profile"
+          >
             <FaInstagram className="hover:text-primary transition-colors duration-150" />
           </a>
         </div>
