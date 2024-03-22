@@ -3,14 +3,12 @@ import { HoverEffect } from "../animations/card-hover-effect";
 export default function WorkSection() {
   return (
     <div id="work" className="relative flex w-full">
-      <div className="container mx-auto px-5 sm:px-0">
+      <div className="flex flex-col gap-3 container mx-auto ">
         <h2 className="text-5xl font-semibold">Work</h2>
-        <p className="font-light">
-          Some projects I&apos;ve worked on in the past.
-        </p>
-        <p>
-          I&apos;m big fan of open source, so you will find the source code of
-          most of my projects on my GitHub.
+        <p className="">
+          Some projects I&apos;ve worked on in the past. <br /> I&apos;m big fan
+          of open source, so you will find the source code of most of my
+          projects on my GitHub.
         </p>
         <HoverEffect items={projects} />
         <a

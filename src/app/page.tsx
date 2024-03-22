@@ -10,7 +10,7 @@ export default function Home() {
       <div className="absolute w-full">
         <HomeSection />
         <div
-          className="flex flex-col gap-14 mt-[100vh] pt-[200px] bg-background"
+          className="flex flex-col gap-14 mt-[100vh] pt-[200px] bg-background px-5 sm:px-0"
           style={{
             maskImage:
               "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) 50px, rgba(0,0,0,1) 150px)",

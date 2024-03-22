@@ -1,6 +1,14 @@
-import { FaGithub, FaTwitter, FaMastodon, FaInstagram } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaTwitter,
+  FaMastodon,
+  FaInstagram,
+  FaEnvelopeOpen,
+  FaRss,
+} from "react-icons/fa6";
 import Blob from "../static/blob";
 import ScrollDownButton from "./components/scroll-down-button";
+import Link from "next/link";
 
 export default function HomeSection() {
   return (
@@ -43,6 +51,20 @@ export default function HomeSection() {
           >
             <FaInstagram className="hover:text-primary transition-colors duration-150" />
           </a>
+        </div>
+        <div className="flex flex-row gap-4 mt-4">
+          <a href="#contact">
+            <div className="flex flex-row gap-2 align-middle bg-text text-background px-6 py-2 font-medium rounded-md border-2 border-text hover:text-text transition-all duration-200 hover:bg-background hover:shadow-text ">
+              <FaEnvelopeOpen className="my-auto" />
+              <span className="my-auto">Contact Me</span>
+            </div>
+          </a>
+          <Link href="/blog" prefetch>
+            <div className="flex flex-row gap-2 align-middle px-6 py-2 font-medium rounded-md border-2 border-text text-text transition-all duration-200 hover:bg-text hover:text-background">
+              <FaRss className="my-auto" />
+              <span className="my-auto">Blog</span>
+            </div>
+          </Link>
         </div>
         <Blob />
       </div>

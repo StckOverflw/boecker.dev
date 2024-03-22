@@ -32,7 +32,7 @@ export function BlobSvg() {
             <animate
               attributeName="stop-color"
               values="#623979;#494BB6;#623979;#494BB6;#623979"
-              dur={"25s"}
+              dur={"21s"}
               repeatCount="indefinite"
             />
           </stop>
@@ -40,7 +40,7 @@ export function BlobSvg() {
             <animate
               attributeName="stop-color"
               values="#494BB6;#623979;#494BB6;#623979;#494BB6"
-              dur={"20s"}
+              dur={"12s"}
               repeatCount="indefinite"
             />
           </stop>
