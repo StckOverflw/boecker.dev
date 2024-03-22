@@ -13,21 +13,31 @@ export default function AboutSection() {
           I&apos;ve been learning and working with different technologies and
           languages. Starting with making Minecraft Plugins in Java and later
           switching to Kotlin for that. I focus on building things on the web
-          now.
+          now. <br /> My favorite programming languages include{" "}
+          <TextLink link="https://rustlang.org">Rust</TextLink>,{" "}
+          <TextLink link="https://typescriptlang.org">Typescript</TextLink> and{" "}
+          <TextLink link="https://kotlinlang.org/">Kotlin</TextLink>. I&apos;ve
+          also started adopting{" "}
+          <TextLink link="https://nixos.org">Nix(-OS)</TextLink> for system
+          administration and DevOps.
         </p>
         <p>
-          Besides development, I do a lot of political activism at{" "}
-          <a
-            href="https://linksjugend-solid.de"
-            className="font-medium"
-            target="_blank"
-          >
+          Besides development, I do a lot of political activism in my position
+          on the federal board of{" "}
+          <TextLink link="https://linksjugend-solid.de">
             Linksjugend [&apos;solid]
-          </a>
-          , the youth organization of the german left party, where I am also on
-          the federal board.
+          </TextLink>
+          , the youth organization of the german left party.
         </p>
       </div>
     </div>
+  );
+}
+
+function TextLink(props: { link: string; children: React.ReactNode }) {
+  return (
+    <a href={props.link} target="_blank" className="font-medium">
+      {props.children}
+    </a>
   );
 }
