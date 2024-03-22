@@ -46,7 +46,7 @@ export default function HomeSection() {
         </div>
         <Blob />
       </div>
-      <ScrollDownButton sectionId="work" />
+      <ScrollDownButton sectionId="about" />
     </div>
   );
 }

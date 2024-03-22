@@ -28,8 +28,22 @@ export function BlobSvg() {
           y2="807"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#494BB6" />
-          <stop offset="1" stopColor="#623979" />
+          <stop stopColor="#494BB6">
+            <animate
+              attributeName="stop-color"
+              values="#623979;#494BB6;#623979;#494BB6;#623979"
+              dur={"25s"}
+              repeatCount="indefinite"
+            />
+          </stop>
+          <stop offset="1" stopColor="#623979">
+            <animate
+              attributeName="stop-color"
+              values="#494BB6;#623979;#494BB6;#623979;#494BB6"
+              dur={"20s"}
+              repeatCount="indefinite"
+            />
+          </stop>
         </linearGradient>
       </defs>
     </svg>
