@@ -8,11 +8,12 @@ import {
   FaTwitter,
 } from "react-icons/fa6";
 import ScrollDownButton from "./components/scroll-down-button";
+import Button from "../ui/button";
 
 export default function HomeSection() {
   return (
     <div className="fixed h-full w-full" id="home">
-      <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center h-[100svh] select-none">
+      <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center supports-[height:100svh]:h-[100svh] h-full select-none">
         <div>
           <h1 className="md:text-4xl text-3xl font-extralight">
             Hey, I&apos;m Emma
@@ -52,18 +53,14 @@ export default function HomeSection() {
           </a>
         </div>
         <div className="flex flex-row gap-4 mt-4">
-          <a href="#contact">
-            <div className="flex flex-row gap-2 align-middle bg-text text-background px-6 py-2 font-medium rounded-md border-2 border-text hover:text-text transition-all duration-200 hover:bg-background hover:shadow-text ">
-              <FaEnvelopeOpen className="my-auto" />
-              <span className="my-auto">Contact Me</span>
-            </div>
-          </a>
-          <Link href="/blog" prefetch>
-            <div className="flex flex-row gap-2 align-middle px-6 py-2 font-medium rounded-md border-2 border-text text-text transition-all duration-200 hover:bg-text hover:text-background">
-              <FaRss className="my-auto" />
-              <span className="my-auto">Blog</span>
-            </div>
-          </Link>
+          <Button href="#contact" style="filled">
+            <FaEnvelopeOpen className="my-auto" />
+            <span className="my-auto">Contact Me</span>
+          </Button>
+          <Button href="/blog" style="outline">
+            <FaRss className="my-auto" />
+            <span className="my-auto">Blog</span>
+          </Button>
         </div>
       </div>
       <ScrollDownButton sectionId="about" />

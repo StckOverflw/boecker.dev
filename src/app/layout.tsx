@@ -45,7 +45,10 @@ export default function RootLayout({
       <body
         className={cn(outfit.className, "dark bg-background text-text text-lg")}
       >
-        <div className="fixed h-[100svh] w-full" id="home">
+        <div
+          className="fixed supports-[height:100svh]:h-[100svh] h-full w-full"
+          id="home"
+        >
           <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center h-full select-none">
             <Blob />
           </div>
