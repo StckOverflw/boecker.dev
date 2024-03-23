@@ -1,19 +1,18 @@
-import {
-  FaGithub,
-  FaTwitter,
-  FaMastodon,
-  FaInstagram,
-  FaEnvelopeOpen,
-  FaRss,
-} from "react-icons/fa6";
-import Blob from "../static/blob";
-import ScrollDownButton from "./components/scroll-down-button";
 import Link from "next/link";
+import {
+  FaEnvelopeOpen,
+  FaGithub,
+  FaInstagram,
+  FaMastodon,
+  FaRss,
+  FaTwitter,
+} from "react-icons/fa6";
+import ScrollDownButton from "./components/scroll-down-button";
 
 export default function HomeSection() {
   return (
     <div className="fixed h-full w-full" id="home">
-      <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center h-full select-none">
+      <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center h-[100svh] select-none">
         <div>
           <h1 className="md:text-4xl text-3xl font-extralight">
             Hey, I&apos;m Emma
@@ -66,7 +65,6 @@ export default function HomeSection() {
             </div>
           </Link>
         </div>
-        <Blob />
       </div>
       <ScrollDownButton sectionId="about" />
     </div>

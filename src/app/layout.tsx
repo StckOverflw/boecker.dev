@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/utils/cn";
+import Blob from "@/components/static/blob";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -44,6 +45,11 @@ export default function RootLayout({
       <body
         className={cn(outfit.className, "dark bg-background text-text text-lg")}
       >
+        <div className="fixed h-[100svh] w-full" id="home">
+          <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center h-full select-none">
+            <Blob />
+          </div>
+        </div>
         {children}
       </body>
     </html>

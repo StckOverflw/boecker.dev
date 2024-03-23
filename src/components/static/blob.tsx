@@ -1,18 +1,11 @@
 export default function Blob() {
   return (
-    <div className="absolute -z-10 blur-[100px] flex right-0 2xl:mr-40 xl:mr-28 lg:mr-5 md:-mr-24 sm:-mr-72 sm:bottom-auto -mr-[32rem] bottom-10">
-      <BlobSvg />
-    </div>
-  );
-}
-
-export function BlobSvg() {
-  return (
     <svg
       width="638"
       height="808"
       viewBox="0 0 638 808"
       fill="none"
+      className="absolute -z-10 flex right-0 2xl:mr-40 xl:mr-28 lg:mr-5 md:-mr-24 sm:-mr-72 sm:bottom-auto -mr-[32rem] bottom-10 blur-[100px]"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

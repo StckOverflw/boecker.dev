@@ -39,8 +39,7 @@ const projects = [
   },
   {
     title: "This website",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+    description: "this website made with next.js and tailwindcss",
     link: "/",
     image: "/images/work/boecker-dev.png",
   },
