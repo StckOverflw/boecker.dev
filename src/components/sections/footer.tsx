@@ -25,20 +25,23 @@ export default function Footer() {
             <a
               href="https://matrix.thttps://matrix.to/#/@emma:boecker.devo"
               className="flex flex-row gap-2 items-center font-light hover:font-medium transition-all duration-200"
+              target="_blank"
             >
               <SiMatrix />
               Invite me to chat on Matrix
             </a>
             <a
-              href="https://matrix.thttps://matrix.to/#/@emma:boecker.devo"
+              href="https://twitter.com/EmmaBoecker"
               className="flex flex-row gap-2 items-center font-light hover:font-medium transition-all duration-200"
+              target="_blank"
             >
               <FaTwitter />
               Message me on Twitter
             </a>
             <a
-              href="https://matrix.thttps://matrix.to/#/@emma:boecker.devo"
+              href="mailto:emma.boecker@linksjugend-solid.de"
               className="flex flex-row gap-2 items-center font-light hover:font-medium transition-all duration-200"
+              target="_blank"
             >
               <MdAlternateEmail />
               Send me an email
