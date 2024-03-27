@@ -23,7 +23,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-col gap-2 my-3 w-max">
             <a
-              href="https://matrix.thttps://matrix.to/#/@emma:boecker.devo"
+              href="https://matrix.to/#/@emma:boecker.dev"
               className="flex flex-row gap-2 items-center font-light hover:font-medium transition-all duration-200"
               target="_blank"
             >
