@@ -1,10 +1,11 @@
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { MouseEvent } from "react";
 
 export default function Button(props: {
   children: React.ReactNode;
   href?: string;
-  onClick?: () => void;
+  onClick?: (e: MouseEvent) => void;
   style: "filled" | "outline";
   className?: string;
 }) {
@@ -13,7 +14,7 @@ export default function Button(props: {
     href,
     style = "filled",
     className,
-    onClick = () => {},
+    onClick = (e: MouseEvent) => {},
   } = props;
 
   const button = (

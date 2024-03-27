@@ -53,7 +53,16 @@ export default function HomeSection() {
           </a>
         </div>
         <div className="flex flex-row gap-4 mt-4">
-          <Button href="#contact" style="filled">
+          <Button
+            href="#contact"
+            style="filled"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             <FaEnvelopeOpen className="my-auto" />
             <span className="my-auto">Contact Me</span>
           </Button>
