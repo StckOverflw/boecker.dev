@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/utils/cn";
 import Blob from "@/components/static/blob";
+import Image from "next/image";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -45,10 +46,17 @@ export default function RootLayout({
       <body
         className={cn(outfit.className, "dark bg-background text-text text-lg")}
       >
-        <div className="fixed supports-[height:100svh]:h-[100svh] h-full w-full">
-          <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center h-full select-none">
+        <div className="absolute supports-[height:100svh]:h-[100svh] h-full w-full">
+          <Image
+            src={"/images/bg/bg_1x.webp"}
+            alt="Background image"
+            width={2560}
+            height={1440}
+            className="h-full object-cover md:translate-x-0"
+          ></Image>
+          {/* <div className="flex flex-col gap-4 2xl:container w-[90%] mx-auto justify-center h-full select-none">
             <Blob />
-          </div>
+          </div> */}
         </div>
         {children}
       </body>

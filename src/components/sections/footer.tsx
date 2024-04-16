@@ -9,10 +9,6 @@ export default function Footer() {
     <div
       id="contact"
       className="h-[40rem] w-full rounded-md relative flex flex-col  items-center justify-center antialiased"
-      style={{
-        maskImage:
-          "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) 50px, rgba(0,0,0,1) 150px)",
-      }}
     >
       <div className="flex md:flex-row flex-col gap-10 md:gap-0 justify-between mx-auto w-full container sm:px-0 px-5 z-20">
         <div>

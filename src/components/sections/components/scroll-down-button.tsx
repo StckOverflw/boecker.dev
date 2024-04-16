@@ -12,7 +12,7 @@ export default function ScrollDownButton(props: { sectionId: string }) {
       }}
       aria-label={`scroll to ${props.sectionId} section`}
     >
-      <FaChevronDown className="text-3xl fixed bottom-48 left-1/2 transform -translate-x-1/2 animate-bounce bg-transparent" />
+      <FaChevronDown className="text-xl animate-bounce bg-transparent" />
     </button>
   );
 }
