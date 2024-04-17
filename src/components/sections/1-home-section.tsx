@@ -73,7 +73,7 @@ export default function HomeSection() {
             </Button>
           </div>
         </header>
-        <div className="absolute bg-gradient-to-b from-background/0 to-background h-16 bottom-0 z-30 w-full p-0">
+        <div className="absolute bg-gradient-to-b from-background/0 to-background h-16 bottom-0 z-30 w-full p-0 antialiased">
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <ScrollDownButton sectionId="about" />
           </div>

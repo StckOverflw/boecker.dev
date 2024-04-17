@@ -3,8 +3,8 @@ import { HoverEffect } from "../animations/card-hover-effect";
 export default function WorkSection() {
   return (
     <div id="work" className="relative flex w-full">
-      <div className="flex flex-col gap-3 container mx-auto ">
-        <h2 className="text-5xl font-semibold">Work</h2>
+      <div className="flex flex-col gap-4 container mx-auto ">
+        <h2 className="md:text-6xl text-5xl font-semibold">Work</h2>
         <p className="">
           Some projects I&apos;ve worked on in the past. <br /> I&apos;m big fan
           of open source, so you will find the source code of most of my
@@ -14,7 +14,7 @@ export default function WorkSection() {
         <a
           href="https://github.com/emmaboecker"
           target="_blank"
-          className="hover:text-primary transition duration-150 pb-10 pl-2"
+          className="hover:text-secondary transition duration-150 pb-10 pl-2 w-max"
         >
           More...
         </a>

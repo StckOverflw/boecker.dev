@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(outfit.className, "dark bg-background text-text text-lg")}
+        className={cn(outfit.className, "dark bg-background text-text text-xl font-light")}
       >
         <div className="absolute supports-[height:100svh]:h-[100svh] h-full w-full">
           <Image

@@ -54,7 +54,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <BackgroundBeams />
+      <BackgroundBeams className="h-full object-cover" />
     </div>
   );
 }
