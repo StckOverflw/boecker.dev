@@ -35,7 +35,7 @@ export default function Footer() {
               Message me on Twitter
             </a>
             <a
-              href="mailto:emma.boecker@linksjugend-solid.de"
+              href="mailto:emma@boecker.dev"
               className="flex flex-row gap-2 items-center font-light hover:font-medium transition-all duration-200"
               target="_blank"
             >
