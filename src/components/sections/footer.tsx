@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div
       id="contact"
-      className="h-[40rem] w-full rounded-md relative flex flex-col  items-center justify-center antialiased snap-start"
+      className="h-[40rem] w-full rounded-md relative flex flex-col min-h-screen items-center justify-center antialiased snap-start"
     >
       <div className="flex md:flex-row flex-col gap-10 md:gap-0 justify-between mx-auto w-full container sm:px-0 px-5 z-20">
         <div>
@@ -54,7 +54,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <BackgroundBeams className="h-full object-cover" />
+      <BackgroundBeams className="h-full object-cover " />
     </div>
   );
 }

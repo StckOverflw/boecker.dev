@@ -8,6 +8,7 @@ export default function Button(props: {
   onClick?: (e: MouseEvent) => void;
   style: "filled" | "outline";
   className?: string;
+  newTab?: boolean;
 }) {
   const {
     children,
@@ -15,6 +16,7 @@ export default function Button(props: {
     style = "filled",
     className,
     onClick = (e: MouseEvent) => {},
+    newTab = true,
   } = props;
 
   const styling = cn(
@@ -30,8 +32,13 @@ export default function Button(props: {
       {href != null ? (
         <>
           {!(href as string).startsWith("/") ? (
-            <a href={href} className={styling} target="_blank">
-            {children}
+            <a
+              href={href}
+              className={styling}
+              onClick={onClick}
+              target={newTab ? "_blank" : ""}
+            >
+              {children}
             </a>
           ) : (
             <Link href={href} className={styling} prefetch>
@@ -40,10 +47,7 @@ export default function Button(props: {
           )}
         </>
       ) : (
-        <button
-          onClick={onClick}
-          className={styling}
-        >
+        <button onClick={onClick} className={styling}>
           {children}
         </button>
       )}

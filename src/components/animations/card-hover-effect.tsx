@@ -2,6 +2,7 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const HoverEffect = ({
   items,
@@ -20,7 +21,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-10 pb-2 text-lg",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4 text-lg",
         className
       )}
     >
@@ -36,7 +37,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-primary block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-primary block rounded-xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -51,11 +52,10 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card className="relative">
-            {item.image && <CardImage url={item.image} className="" />}
-            <CardTitle className={cn(item.image && "-mt-10")}>
-              {item.title}
-            </CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <CardTitle className={cn(item.image && "")}>{item.title}</CardTitle>
+            <CardDescription className="mt-2">
+              {item.description}
+            </CardDescription>
           </Card>
         </a>
       ))}
@@ -73,12 +73,12 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-white/[0.2] group-hover:border-primary relative z-20",
+        "rounded-xl h-full w-full overflow-hidden bg-black border border-white/[0.2] group-hover:border-primary relative z-20 p-6",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="">{children}</div>
       </div>
     </div>
   );
@@ -91,8 +91,14 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h3 className={cn("text-xl font-bold tracking-wide mt-4", className)}>
+    <h3
+      className={cn(
+        "flex flex-row items-center gap-2 text-xl font-bold tracking-wide",
+        className
+      )}
+    >
       {children}
+      <FaExternalLinkAlt className="scale-75" />
     </h3>
   );
 };
@@ -104,32 +110,8 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p
-      className={cn("mt-6 tracking-wide leading-relaxed font-light", className)}
-    >
+    <p className={cn("tracking-wide leading-relaxed font-light", className)}>
       {children}
     </p>
-  );
-};
-
-export const CardImage = ({
-  className,
-  url,
-}: {
-  className?: string;
-  url: string;
-}) => {
-  return (
-    <Image
-      src={url}
-      alt="project preview"
-      width={480}
-      height={270}
-      className={cn("rounded-md", className)}
-      style={{
-        maskImage:
-          "linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.05) 15%, rgba(0,0,0,1))",
-      }}
-    />
   );
 };

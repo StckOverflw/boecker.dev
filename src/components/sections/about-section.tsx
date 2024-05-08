@@ -2,10 +2,13 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <div id="about" className="flex w-full h-screen snap-start py-20">
+    <div
+      id="about"
+      className="flex w-[90%] mx-auto min-h-screen snap-start py-20"
+    >
       <div className="container mx-auto">
         <h2 className="md:text-6xl text-5xl font-semibold">About me</h2>
-        <div className="grid grid-cols-3 mt-6 gap-10 text-xl text-text/80">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-10 text-xl text-text/80">
           <div className="flex flex-col gap-4">
             <p>
               My name is Emma, I&apos;m a student, developer, system
@@ -23,33 +26,36 @@ export default function AboutSection() {
               people how to code.
             </p>
             <Image
+              src={"/images/general/waiting-for-bus.jpg"}
+              className="mt-6"
+              alt=""
+              width={480}
+              height={640}
+            />
+          </div>
+          <div className="flex flex-col-reverse lg:flex-col gap-4">
+            <Image
               src={"/images/general/christopher-street-day.jpg"}
               width={512}
               height={0}
               alt="Picture of a Demonstration. The Pride Flag, Trans Flag, and the Flag of german Party 'Die Linke' is visible."
               className="mt-2"
             />
-          </div>
-          <div className="flex flex-col gap-4">
-            <Image
-              src={"/images/general/waiting-for-bus.jpg"}
-              alt=""
-              width={480}
-              height={640}
-            />
-            <h3 className="text-text md:text-5xl text-4xl font-semibold">
-              Activism
-            </h3>
-            <p>
-              We live in a world where the rich get richer and the poor get
-              poorer, big corporations control the internet, the information and
-              the people.
-            </p>
-            <p>
-              Digital policy and rights and public transport, some of the areas
-              I focus on are a big part of the everyday life of so many people
-              but they are often overlooked.
-            </p>
+            <div className="flex flex-col">
+              <h3 className="text-text md:text-5xl text-4xl font-semibold lg:mt-6">
+                Activism
+              </h3>
+              <p>
+                We live in a world where the rich get richer and the poor get
+                poorer, big corporations control the internet, the information
+                and the people.
+              </p>
+              <p>
+                Digital policy and rights and public transport, some of the
+                areas I focus on are a big part of the everyday life of so many
+                people but they are often overlooked.
+              </p>
+            </div>
           </div>
           <div className="flex justify-center items-center">
             <Image
