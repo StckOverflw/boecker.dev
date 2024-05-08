@@ -32,7 +32,6 @@ export default function AboutSection() {
           </div>
           <div className="flex flex-col gap-4">
             <Image
-              className="float-right"
               src={"/images/general/waiting-for-bus.jpg"}
               alt=""
               width={480}
@@ -51,6 +50,14 @@ export default function AboutSection() {
               I focus on are a big part of the everyday life of so many people
               but they are often overlooked.
             </p>
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              src={"/images/general/sunset.jpg"}
+              alt=""
+              width={480}
+              height={640}
+            />
           </div>
         </div>
       </div>
