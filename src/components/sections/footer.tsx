@@ -8,12 +8,12 @@ export default function Footer() {
   return (
     <div
       id="contact"
-      className="h-[40rem] w-full rounded-md relative flex flex-col  items-center justify-center antialiased"
+      className="h-[40rem] w-full rounded-md relative flex flex-col  items-center justify-center antialiased snap-start"
     >
       <div className="flex md:flex-row flex-col gap-10 md:gap-0 justify-between mx-auto w-full container sm:px-0 px-5 z-20">
         <div>
           <h1 className="text-4xl font-semibold">Contact Me</h1>
-          <p className="text-lg font-light">
+          <p className="text-xl font-light">
             Got an idea? Let&apos;s talk about it! Wanna ask me something? Feel
             free to reach out!
           </p>
@@ -48,7 +48,7 @@ export default function Footer() {
         <div>
           <Link
             href="/imprint"
-            className="font-extralight hover:font-normal transition-all duration-200"
+            className="font-extralight text-xl hover:font-normal transition-all duration-200"
           >
             Imprint
           </Link>

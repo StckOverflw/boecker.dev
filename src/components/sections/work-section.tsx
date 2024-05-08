@@ -2,7 +2,7 @@ import { HoverEffect } from "../animations/card-hover-effect";
 
 export default function WorkSection() {
   return (
-    <div id="work" className="relative flex w-full">
+    <div id="work" className="flex w-full snap-start h-screen pt-20">
       <div className="flex flex-col gap-4 container mx-auto ">
         <h2 className="md:text-6xl text-5xl font-semibold">Work</h2>
         <p className="">
@@ -51,10 +51,23 @@ const projects = [
   },
   {
     title: "Minecraft Hunger Games",
-    description:
-      "Besides web development, I am also experienced in Minecraft Development. Here I made a Hunger Games plugin for a YouTube Video by JacobStreams.",
+    description: "A Hunger Games event for a YouTube Video by JacobStreams.",
     link: "https://www.youtube.com/watch?v=9MaMhAUm1as",
     image: "/images/work/hunger-games.jpg",
+  },
+  {
+    title: "Minecraft Challenge Plugin",
+    description:
+      "A Minecraft Challenge Plugin inspired by german YouTuber BastiGHG",
+    link: "https://github.com/StckOverflwNet/StckUtils",
+    image: "/images/work/stckutils.png",
+  },
+  {
+    title: "Damage = Random",
+    description:
+      "A Minecraft Plugin for a Video by HighBeanie where if you take damage, random things happen",
+    link: "https://www.youtube.com/watch?v=15uUMJGuQFw",
+    image: "/images/work/beanie.jpg",
   },
   {
     title: "Minecraft Challenge Plugin",
