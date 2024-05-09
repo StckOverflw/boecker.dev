@@ -6,7 +6,7 @@ export default function WorkSection() {
       id="work"
       className="flex w-[90%] mx-auto snap-start min-h-screen pt-20"
     >
-      <div className="flex flex-col gap-5 container mx-auto ">
+      <div className="flex flex-col gap-5 container mx-auto">
         <h2 className="md:text-6xl text-5xl font-semibold">Work</h2>
         <p className="text-text/80">
           Some projects I&apos;ve worked on in the past. <br /> I&apos;m big fan
@@ -22,6 +22,14 @@ export default function WorkSection() {
           >
             More...
           </a>
+        </div>
+        <div className="flex flex-col gap-5 pb-20">
+          <h2 className="md:text-5xl text-4xl font-semibold">Clients</h2>
+          <p className="text-text/80">
+            Some of the clients I&apos;ve worked with in the past (and until
+            now).
+          </p>
+          <HoverEffect items={clients} columns={3} />
         </div>
       </div>
     </div>
@@ -68,9 +76,58 @@ const projects = [
     link: "https://www.youtube.com/watch?v=15uUMJGuQFw",
   },
   {
-    title: "Minecraft Challenge Plugin",
+    title: "Mod Installer",
+    description: "A fully web-based Minecraft Modpack installer",
+    link: "https://github.com/emmaboecker/mod-installer",
+  },
+];
+
+const clients = [
+  {
+    title: "Linksjugend ['solid]",
+    subtitle: "2023 - present",
+    icon: "/images/work/linksjugend.png",
     description:
-      "A Minecraft Challenge Plugin inspired by german YouTuber BastiGHG",
-    link: "https://github.com/StckOverflwNet/StckUtils",
+      "Besides my activism there, I also do some IT for the organization and some of its state-level associations.",
+    link: "https://linksjugend-solid.de",
+  },
+  {
+    title: "HighBeanie",
+    subtitle: "2021 - 2022",
+    description:
+      "Minecraft Server hosting and development for videos/other projects",
+    icon: "/images/work/highbeanie.webp",
+    link: "https://linktr.ee/highbeanie",
+  },
+  {
+    title: "Plixel",
+    subtitle: "2022 - 2023",
+    icon: "/images/work/plixel.webp",
+    description:
+      "Development for the Plixel Minecraft Server, the Minecraft Server for TommyInnit's Discord Community",
+    link: "https://discord.gg/rHc3Qj2Jmt",
+  },
+  {
+    title: "JacobStreams",
+    subtitle: "2023",
+    icon: "/images/work/jacobstreams.webp",
+    description:
+      "Development for Minecraft Events like the Hunger Games Event mentioned above",
+    link: "https://twitch.tv/jacobstreams",
+  },
+  {
+    title: "Styles",
+    subtitle: "2021 - 2023",
+    icon: "/images/work/styles.jpg",
+    description:
+      "Server Hosting, Web Dev, and Development for many streams, videos and other projects for now retired streamer Styles",
+    link: "https://www.twitch.tv/styles",
+  },
+  {
+    title: "Llama",
+    subtitle: "2022",
+    icon: "/images/work/llama.jpg",
+    description: "Development of a Minecraft SMP and a YouTube Short",
+    link: "https://www.youtube.com/@LlamaSticks",
   },
 ];

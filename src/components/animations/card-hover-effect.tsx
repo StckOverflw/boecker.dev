@@ -7,21 +7,25 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 export const HoverEffect = ({
   items,
   className,
+  columns,
 }: {
   items: {
     title: string;
+    subtitle?: string;
     description: string;
     link: string;
-    image?: string;
+    icon?: string;
   }[];
   className?: string;
+  columns?: 3 | 4;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4 text-lg",
+        "grid grid-cols-1 md:grid-cols-2 py-4 text-lg",
+        columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4",
         className
       )}
     >
@@ -52,7 +56,17 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card className="relative">
-            <CardTitle className={cn(item.image && "")}>{item.title}</CardTitle>
+            <div className="flex flex-row gap-2">
+              {item.icon && <CardIcon src={item.icon} />}
+              <CardTitle className={cn(item.icon && "")}>
+                {item.title}
+              </CardTitle>
+              {item.subtitle && (
+                <p className="text-md font-extralight ml-auto">
+                  {item.subtitle}
+                </p>
+              )}
+            </div>
             <CardDescription className="mt-2">
               {item.description}
             </CardDescription>
@@ -113,5 +127,23 @@ export const CardDescription = ({
     <p className={cn("tracking-wide leading-relaxed font-light", className)}>
       {children}
     </p>
+  );
+};
+
+export const CardIcon = ({
+  className,
+  src,
+}: {
+  className?: string;
+  src: string;
+}) => {
+  return (
+    <Image
+      src={src}
+      alt="icon"
+      width={128}
+      height={128}
+      className={cn("rounded-lg w-8", className)}
+    />
   );
 };
