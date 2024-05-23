@@ -51,9 +51,9 @@ export default function AboutSection() {
                 and the people.
               </p>
               <p>
-                Digital policy and rights and public transport, some of the
-                areas I focus on are a big part of the everyday life of so many
-                people but they are often overlooked.
+                Digital policy and rights as well as mobility, some of the areas
+                I focus on are a big part of the everyday life of so many people
+                but they are often overlooked.
               </p>
             </div>
           </div>
