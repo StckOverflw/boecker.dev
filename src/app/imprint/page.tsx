@@ -15,7 +15,7 @@ export default function Imprint() {
         <h1 className="text-5xl font-semibold">Imprint</h1>
         <div className="flex flex-col gap-8 mt-10">
           <p className="font-extralight">
-            Legal Notice for compliance with the German laws under § 5 TMG and §
+            Legal Notice for compliance with the German laws under § 5 DDG and §
             55 RStV.
           </p>
           <div className="flex flex-col gap-2">
