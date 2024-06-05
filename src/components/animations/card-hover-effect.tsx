@@ -143,7 +143,7 @@ export const CardIcon = ({
       alt="icon"
       width={128}
       height={128}
-      className={cn("rounded-lg w-8", className)}
+      className={cn("rounded-lg w-auto h-8 my-auto", className)}
     />
   );
 };
