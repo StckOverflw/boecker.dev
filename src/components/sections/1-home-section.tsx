@@ -39,7 +39,7 @@ export default function HomeSection() {
               <FaTwitter className="hover:text-primary transition-colors duration-150" />
             </a>
             <a
-              href="https://chaos.social/boecker"
+              href="https://chaos.social/@boecker"
               target="_blank"
               aria-label="mastodon profile"
             >
