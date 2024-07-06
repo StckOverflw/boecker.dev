@@ -46,10 +46,10 @@ export default function RootLayout({
       <body
         className={cn(
           outfit.className,
-          "dark bg-background flex flex-col text-text text-xl font-light "
+          "bg-background flex flex-col text-text text-xl font-light "
         )}
       >
-        <div className="absolute supports-[height:100svh]:h-[100svh] h-full w-full -z-10">
+        <div className="absolute supports-[height:100svh]:h-[100svh] h-full w-full -z-10 bg-background">
           <Image
             src={"/images/bg/bg_1x.webp"}
             alt="Background image"
