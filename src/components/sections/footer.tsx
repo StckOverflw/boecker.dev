@@ -45,14 +45,14 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full h-[2px] bg-zinc-900 md:hidden" />
-        <div>
+        {/* <div>
           <Link
             href="/imprint"
             className="font-extralight text-xl hover:font-normal transition-all duration-200"
           >
             Imprint
           </Link>
-        </div>
+        </div> */}
       </div>
       <BackgroundBeams className="h-full object-cover " />
     </div>
